@@ -141,11 +141,6 @@ a:hover {
 	  font-size: 16px;
 	  padding: 10px 24px 11px 24px;
 	}
-
-	.btn-get-started {
-		font-size: 16px;
-		padding: 10px 24px 11px 24px;
-	  }
   }
   
   @-webkit-keyframes up-down {
@@ -226,6 +221,13 @@ a:hover {
 .btn-get-started:hover {
 	background: #209dd8;
 	color: #fff;
+  }
+
+  @media (max-width: 1074px) {
+    .btn-get-started {
+	  font-size: 13px;
+	  padding: 10px 24px 11px 24px;
+	}
   }
 
   
@@ -496,9 +498,27 @@ a:hover {
   }
   
 
+  .carousel,
+  .carousel-item,
+  .carousel-item.active {
+	height: 80%;
+	background-color: #111;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
+  }
+  .carousel-inner {
+	height: 80%;
+  }
 
-
-
+  .carousel, .slide,
+  .carousel .carousel-inner,
+  .carousel .carousel-item,
+  .carousel .carousel-item img,
+  .carousel .carousel-control {
+	border-radius: 5px;
+	overflow: hidden;
+  }
 
 
 
