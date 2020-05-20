@@ -141,6 +141,11 @@ a:hover {
 	  font-size: 16px;
 	  padding: 10px 24px 11px 24px;
 	}
+
+	.btn-get-started {
+		font-size: 16px;
+		padding: 10px 24px 11px 24px;
+	  }
   }
   
   @-webkit-keyframes up-down {
@@ -202,6 +207,27 @@ a:hover {
   .section-title p {
 	margin: 15px 0 0 0;
   }
+
+.btn-get-started {
+	font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin-top: 25px;
+    color: #fff;
+    background: #49b5e7;
+    text-transform: uppercase;
+}
+
+.btn-get-started:hover {
+	background: #209dd8;
+	color: #fff;
+  }
+
   
 /*--------------------------------------------------------------
 # Services
