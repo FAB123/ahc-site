@@ -501,14 +501,14 @@ a:hover {
   .carousel,
   .carousel-item,
   .carousel-item.active {
-	height: 80%;
+	height: 25em;
 	background-color: #111;
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size: 25em;
 	background-position: center;
   }
   .carousel-inner {
-	height: 80%;
+	height: 25em;
   }
 
   .carousel, .slide,
@@ -626,4 +626,49 @@ Demos Section
   .back-to-top i:hover {
 	background: #57aae1;
 	color: #fff;
+  }
+
+  .recommended {
+	border-color: #3498db;
+  }
+  
+   .recommended .btn-buy {
+	background: #3498db;
+	color: #fff;
+  }
+  
+.recommended .btn-buy:hover {
+	background: #2383c4;
+	border-color: #2383c4;
+  }
+  
+  .box {
+	padding: 20px;
+	background: #f9f9f9;
+	text-align: center;
+	border-radius: 8px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #f9f9f9;
+  }
+
+ 
+
+  
+ .box .btn-wrap {
+	padding: 15px;
+	text-align: center;
+  }
+  
+  .box .btn-buy {
+	display: inline-block;
+	padding: 10px 40px 12px 40px;
+	border-radius: 50px;
+	border: 2px solid #3498db;
+	color: #3498db;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	transition: 0.3s;
   }
