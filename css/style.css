@@ -3,7 +3,8 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+	z-index: 1030;
+	border-bottom: #3498db solid 2px;
 }
 
 body {
@@ -15,10 +16,27 @@ font-family: "Dosis", sans-serif;
 }
   
 a {
-	color: #3498db;
+	color: black;
   }
   
 a:hover {
+	color: #5faee3;
+	text-decoration: none;
+  }
+
+.navbar-brand
+{
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.navbar-brand:hover
+{
+	color: black;
+}
+
+.nav-item a:hover {
 	color: #5faee3;
 	text-decoration: none;
   }
@@ -49,6 +67,7 @@ a:hover {
 		display: block;
 	}
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
