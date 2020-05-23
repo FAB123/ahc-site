@@ -64,3 +64,57 @@ if ($(window).width() < 992) {
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
+
+  $(document).ready(function(){
+    $("#callback-form").validate({
+      rules: {
+        mobile:
+        {
+          required: true,
+          number: true,
+          minlength:10,
+          maxlength:10
+        }
+      },
+       messages:
+       {
+        mobile:
+           {
+              required:"Mobile Number Must be Required",
+              minlength:"Mobile Number Must be a 10 Digit Number",
+              maxlength:"Mobile Number Must be a 10 Digit Number",
+              number:"Mobile Number Must be a Number"
+           }
+       },
+       errorElement: "div",
+       errorLabelContainer: '.mobile-validate',
+       
+       submitHandler: function(form) {
+          alert("Form submitted");
+        }
+    });
+
+    $("#email-form").validate({
+      rules: {
+        name:
+        {
+          required: true,
+          min: 4
+        }
+      },
+       messages:
+       {
+        name:
+           {
+              required:"Please enter at least 8 chars of subject",
+              min:"Mobile Number Must be a 10 Digit Number",
+              max:"Mobile Number Must be a 10 Digit Number",
+              number:"Mobile Number Must be a Number",
+           }
+       }
+    });
+
+
+
+  });

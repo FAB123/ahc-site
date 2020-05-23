@@ -670,6 +670,11 @@ Demos Section
 	  color:rgb(8, 130, 245);
   }
 
+  .page-footer
+  {
+	border-top: 3px solid #47b2e4;
+	background: rgb(250, 248, 248);
+  }
 
   @media (max-width: 996px) {
 	.demo_button{
@@ -686,4 +691,12 @@ Demos Section
 		background: #3498db;
 		display: inline-block;
 	  }
+  }
+
+  .mobile-validate {
+	display: none;
+	color: red;
+	margin: 0 0 15px 0;
+	font-weight: 400;
+	font-size: 13px;
   }
