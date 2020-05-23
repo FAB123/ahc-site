@@ -234,7 +234,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+.about .icon-box {
 	padding: 30px;
 	position: relative;
 	overflow: hidden;
@@ -245,7 +245,7 @@ a:hover {
 	z-index: 1;
   }
   
-  .services .icon-box::before {
+  .about .icon-box::before {
 	content: '';
 	position: absolute;
 	background: #e1f0fa;
@@ -258,7 +258,7 @@ a:hover {
 	z-index: -1;
   }
   
-  .services .icon-box:hover::before {
+  .about .icon-box:hover::before {
 	background: #3498db;
 	right: 0;
 	top: 0;
@@ -267,7 +267,7 @@ a:hover {
 	border-radius: 0px;
   }
   
-  .services .icon {
+  .about .icon {
 	margin: 0 auto 20px auto;
 	padding-top: 10px;
 	display: inline-block;
@@ -279,41 +279,41 @@ a:hover {
 	transition: all 0.3s ease-in-out;
   }
   
-  .services .icon i {
+  .about .icon i {
 	font-size: 36px;
 	line-height: 1;
 	color: #fff;
   }
   
-  .services .title {
+  .about .title {
 	font-weight: 700;
 	margin-bottom: 15px;
 	font-size: 18px;
   }
   
-  .services .title a {
+  .about .title a {
 	color: #111;
   }
   
-  .services .description {
+  .about .description {
 	font-size: 15px;
 	line-height: 28px;
 	margin-bottom: 0;
   }
   
-  .services .icon-box:hover .title a, .services .icon-box:hover .description {
+  .about .icon-box:hover .title a, .about .icon-box:hover .description {
 	color: #fff;
   }
   
-  .services .icon-box:hover .icon {
+  .about .icon-box:hover .icon {
 	background: #fff;
   }
   
-  .services .icon-box:hover .icon i {
+  .about .icon-box:hover .icon i {
 	color: #3498db;
   }
 
-  .services .icon-box:hover p, .services .icon-box:hover a{
+  .about .icon-box:hover p, .about .icon-box:hover a{
 	color: #fff;
   }
   
@@ -638,6 +638,9 @@ Demos Section
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
 
+  .carousel-caption p{
+	  color:rgb(8, 130, 245);
+  }
 
 
   @media (max-width: 996px) {
@@ -645,4 +648,14 @@ Demos Section
 		width: 100%;
 		text-align: center;
 	}
+	.section-title h2 {
+		font-size: 1rem;
+	}
+	.section-title h2::before, .section-title h2::after {
+		content: '';
+		width: 20px;
+		height: 2px;
+		background: #3498db;
+		display: inline-block;
+	  }
   }
