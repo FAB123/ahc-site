@@ -701,3 +701,7 @@ Demos Section
 	font-weight: 400;
 	font-size: 13px;
   }
+
+  .validate {
+	color: red;
+  }
