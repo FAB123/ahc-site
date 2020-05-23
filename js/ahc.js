@@ -137,7 +137,7 @@ if ($(window).width() < 992) {
           messages:
           {
             required:"Please write something for us",
-            minlength:"Please enter at least 10 chars of subject"
+            minlength:"Please enter at least 10 chars of messages"
           }
           
        },
