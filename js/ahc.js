@@ -65,7 +65,6 @@ if ($(window).width() < 992) {
     return false;
   });
 
-
   $(document).ready(function(){
     $("#callback-form").validate({
       rules: {
@@ -100,19 +99,56 @@ if ($(window).width() < 992) {
         name:
         {
           required: true,
-          min: 4
+          minlength:4
+        },
+        email:
+        {
+          required: true,
+          email: true
+        },
+        subject:
+        {
+          required: true,
+          minlength:8
+        },
+        messages:
+        {
+          required: true,
+          minlength:10
         }
       },
        messages:
        {
-        name:
-           {
-              required:"Please enter at least 8 chars of subject",
-              min:"Mobile Number Must be a 10 Digit Number",
-              max:"Mobile Number Must be a 10 Digit Number",
-              number:"Mobile Number Must be a Number",
-           }
-       }
+          name:
+          {
+            required:"Name Must be Required",
+            minlength:"Please enter at least 4 chars"
+          },
+          email:
+          {
+            required:"Email Must be Required",
+            email:"Please enter a valid email"
+          },
+          subject:
+          {
+            required:"Subject Must be Required",
+            minlength:"Please enter at least 8 chars of subject"
+          },
+          messages:
+          {
+            required:"Please write something for us",
+            minlength:"Please enter at least 10 chars of subject"
+          }
+          
+       },
+       errorElement: "div",
+       errorLabelContainer: '.error-message',
+       
+       submitHandler: function(form) {
+          alert("Form submitted");
+          $(".error-message").effect( "shake", { direction: "up", times: 4, distance: 10}, 1000 );
+          
+        }
     });
 
 
