@@ -19,47 +19,59 @@
 <body>
 
 <header id="header" class="fixed">
-  <nav class="navbar navbar-expand-lg bg-light">
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main_navbar">
     <a class="navbar-brand" href="#">AL HASIB</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class='bx bx-slider-alt'></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">About</a>
         </li>
-
         <li class="nav-item dropdown">
-          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Products </a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a class="dropdown-item dropdown-toggle" href="#"> <span class='bx bx-desktop'></span> SalesTime </a>
-                <ul class="submenu submenu-left dropdown-menu">
-                  <li><a class="dropdown-item" href="#salestime">SalesTime ERP</a></li>
-                  <li><a class="dropdown-item" href="#salestime">SalesTime POS</a></li>
-                  <li><a class="dropdown-item" href="#salestime">SalesTime BASIC</a></li>
-                  <li><a class="dropdown-item" href="#salestimeandroid">SalesTime Android</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="#drservice"> <span class='bx bx-chip'></span> Dr.Service </a></li>
-              <li><a class="dropdown-item" href="#containers"> <span class='bx bxs-truck'></span> Container </a></li>
-              <li><a class="dropdown-item" href="#others"> <span class='bx bx-wallet'></span> CashBook </a></li>
-              <li><a class="dropdown-item" href="#others"> <span class='bx bx-git-compare'></span> Dynamic DNS </a></li>
-            </ul>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#drservice">Dr.Service</a></li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                SalesTime
+              </a>
+              <ul class="dropdown-menu left" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item" href="#salestime">SalesTime ERP</a></li>
+                <li></li><a class="dropdown-item" href="#salestime">SalesTime Basic</a></li>
+                <li><a class="dropdown-item" href="#salestime">SalesTime POS</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#salestimeandroid">SalesTime Android</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#containers">Container</a></li>
+            <li><a class="dropdown-item" href="#others">CashBook</a></li>
+            <li><a class="dropdown-item" href="#others">Dynamic DNS</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#team">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#contact">Contacts</a>
         </li>
       </ul>
     </div>
-  </nav>
+</nav>
 </header>
 
 <section id="hero" class="d-flex align-items-center">
@@ -1041,5 +1053,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/ahc.js"></script>
+    <script>
+      $(function () {
+          $('#main_navbar').bootnavbar();
+      })
+    </script>
+    
 </body>
 </html>
