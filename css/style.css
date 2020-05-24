@@ -261,6 +261,10 @@ a:hover {
 	  font-size: 13px;
 	  padding: 10px 24px 11px 24px;
 	}
+	.icon-box
+	{
+		height: 15em;
+	}
   }
 
   
