@@ -51,7 +51,9 @@ AOS.init({
 })(jQuery);
 
 
-
+$('.hide').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
 
 
   // Back to top button
